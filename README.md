@@ -9,7 +9,7 @@ A small JavaScript to normalize the fullScreen DOM API cross-browser and adds so
 
 Use
 =========
-A global object with an API is defined in this script with the normailized names for the fullScreen DOM API.
+A global "fullScreen" object with the following properties is defined in this script which can be used to get a cross-browser normalized fullScreen DOM API.
 * requestFullScreen:  function to request an element to go fullScreen (params: an optional node reference deafults to the node with the "fullScreenElement" id attribute)
 * cancelFullScreen:   function to cancel fullScreen
 * fullscreenchange:   function to add a handler to the normalized fullscreenchange event (params: function and an optional context)
