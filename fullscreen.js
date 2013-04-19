@@ -30,11 +30,13 @@ var fullScreen = ( function ( doc, body, undefined ) {
     function noSupport () {
         body.className += "fullSreenNotEnabled";
         return {
-            requestFullScreen: Function.prototype,
-            cancelFullScreen: Function.prototype,
-            fullScreenElement: undefined,
-            fullScreenEnabled: false,
-            fullScreen: false
+            requestFullScreen:  Function.prototype,
+            cancelFullScreen:   Function.prototype,
+            fullscreenchange:   Function.prototype,
+            addEventListener:   Function.prototype,
+            fullScreenElement:  undefined,
+            fullScreenEnabled:  false,
+            fullScreen:         false
         };
     }
 
@@ -205,5 +207,3 @@ var fullScreen = ( function ( doc, body, undefined ) {
     return api;
 
 } ) ( document, document.body );
-
-console.dir( fullScreen );
