@@ -1,15 +1,20 @@
 fullScreen
 ==========
 
-A small JavaScript to normalize the fullScreen DOM API cross-browser and adds some other easy things like
+A small JavaScript to normalize the fullScreen DOM API cross-browser and adds some other easy things like:
 * a way to automatically hide/show content on the page dependent on the fullScreen support
 * a way to add handlers to the normalized fullscreenchange event
 * automatically add eventHandlers to elements on the page with a "fullScreenToggle" className
 * automatically selects the element with the "fullScreenElement" id to be taken fullScreen when a user requests fullScreen
 
+[Demo](http://pm5544.github.io/fullScreen/ "demo here!")
 Use
 =========
-A global "fullScreen" object with the following properties is defined in this script which can be used to get a cross-browser normalized fullScreen DOM API.
+
+simple mode: just add an id to the element you would like to go fullScreen and add classes to the elements you want to show/hide dependent on fullScreen support and the elements you want to use as triggers to go fullScreen.
+
+
+advanced: A global "fullScreen" object with the following properties is defined in this script which can be used to get a cross-browser normalized fullScreen DOM API.
 * requestFullScreen:  function to request an element to go fullScreen (params: an optional node reference deafults to the node with the "fullScreenElement" id attribute)
 * cancelFullScreen:   function to cancel fullScreen
 * fullscreenchange:   function to add a handler to the normalized fullscreenchange event (params: function and an optional context)
@@ -17,6 +22,8 @@ A global "fullScreen" object with the following properties is defined in this sc
 * fullScreenElement:  undefined or the current element which is fullScreen
 * fullScreenEnabled:  boolean indicating support in the current browser
 * fullScreen:         boolean value indicating if an elmeent is fullScreen or not
+
+When using the default classNames and id you don't have to have a global object so you could also delete the var = fullScreen part from the beginning of the script.
 
 known issues
 =========
