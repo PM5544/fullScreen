@@ -195,7 +195,6 @@ var fullScreen = ( function ( doc, body, undefined ) {
     // add the className to the html element to be able to change the elements styling in CSS
     document.documentElement.classList.add( "fullScreenEnabled" );
 
-
     // one element per page can be set to fullScreen automatically, if another node is needed just pass a reference to the node into fullScreen.requestFullScreen
     var fullScreenElement = doc.querySelector( "#fullScreenElement" );
 
