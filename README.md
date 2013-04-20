@@ -7,7 +7,7 @@ A small JavaScript to normalize the fullScreen DOM API cross-browser and adds so
 * automatically add eventHandlers to elements on the page with a "fullScreenToggle" className
 * automatically selects the element with the "fullScreenElement" id to be taken fullScreen when a user requests fullScreen
 
-[Demo](http://pm5544.github.io/fullScreen/ "demo here!")
+[Demo](http://pm5544.github.io/fullScreen/test.html "demo here!")
 Use
 =========
 
