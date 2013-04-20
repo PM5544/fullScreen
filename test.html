@@ -1,0 +1,61 @@
+<!doctype html>
+<head>
+<meta charset="UTF-8">
+<title>fullScreen test page</title>
+<style>
+/* hide the lements by default */
+.fullScreenToggle,
+.fullScreen{
+    display: none;
+}
+/* to show them when support is found */
+.fullScreenEnabled .fullScreenToggle,
+.fullScreenEnabled .fullScreen{
+    display: initial;
+}
+
+
+/* some styles for the element which can be set fullscreen when capable */
+.fullScreenEnabled #fullScreenElement{
+    background-color: #bada55;
+}
+
+
+/* custom styling for the element which is "fullScreen", all vendor prefixed at this time... */
+:-moz-full-screen{
+    background: url(http://placekitten.com/g/600/400) repeat;
+    /* FF auto expands the elemnt to the size of the window so we don't have to jumpt through styling hoops */
+}
+:-webkit-full-screen{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background: url(http://placekitten.com/g/400/600) repeat;
+}
+
+/* some styling to show something when no support is found */
+.fullSreenNotEnabled{
+
+}
+.fullScreenEnabled .fullSreenNotEnabled{
+    display: none;
+}
+
+button{
+    padding: 1em;
+}
+</style>
+</head>
+<body id="fullScreenElement">
+
+    <div class="fullScreen">
+        <button class="fullScreenToggle"> Click here to toggle FULLSCREEN </button>
+    </div>
+
+    <p class="fullSreenNotEnabled">Hmm.. your browser doesn't seem to support the fullScreen stuff..</p>
+
+</body>
+<script src="fullScreen.js"></script>
+</html>
