@@ -11,6 +11,8 @@
 /* to show them when support is found */
 .fullScreenEnabled .fullScreenToggle,
 .fullScreenEnabled .fullScreen{
+    /* fallback for some browsers who do not support initial as value */
+    display: block;
     display: initial;
 }
 
