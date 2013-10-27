@@ -27,4 +27,6 @@ When using the default classNames and id you don't have to have a global object 
 
 known issues
 =========
-At this time there's a bug in Chrome for Android which gives a false positive while feature detecting the fullScreen DOM API [go here to star the issue to get it resolved](https://code.google.com/p/chromium/issues/detail?id=180734 "go here to star the issue")
+Before version 28 there was a bug in Chrome for Android which gave a false positive while feature detecting the fullScreen DOM API [go here to star the issue to get it resolved](https://code.google.com/p/chromium/issues/detail?id=180734 "go here to star the issue")
+This has been resolved.
+I'm not aware of any other issues.
