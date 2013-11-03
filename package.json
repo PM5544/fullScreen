@@ -1,0 +1,24 @@
+{
+  "name": "fullScreen",
+  "version": "0.1.0",
+  "description": "small lib to feature detect and normalize the fullscreen browser API",
+  "main": "fullscreen.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PM5544/fullScreen.git"
+  },
+  "keywords": [
+    "fullscreen",
+    "requestFullScreen",
+    "fullScreenEnabled",
+    "fullScreenElement",
+    "cancelFullScreen"
+  ],
+  "author": "PM5544 (Joël Kuijten)",
+  "license": "DWTFYW",
+  "gitHead": "beb7208af9470d34553672f350905b339ed809a6",
+  "readmeFilename": "README.md"
+}
