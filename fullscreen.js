@@ -181,7 +181,7 @@ var fullScreen = ( function ( doc, body, undefined ) {
             }
 
             event = _event || "click";
-            element = _element || fullScreenElement;
+            element = _element || document.body;
 
             node.addEventListener( event, function () {
                 if ( !api.fullScreen ) {
